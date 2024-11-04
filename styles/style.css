@@ -56,6 +56,7 @@ ol {
 .result__video-container {
   min-width: 711px;
   padding-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
@@ -69,13 +70,33 @@ ol {
   justify-content: space-between;
 }
 
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  line-height: 21.6px;
+}
+
 .content__details {
   min-width: 399px;
+}
+
+.title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 70.5px;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__list {
   height: 298px;
   overflow: auto;
+  position: relative;
 }
 
 .content__list-item {
@@ -86,10 +107,22 @@ ol {
   padding-bottom: 0;
 }
 
+.content__card-link {
+  text-decoration: none;
+  color: #fff
+}
+
 .content__video-card {
   display: grid;
   grid-template-columns: 1fr 194px;
   align-items: start;
+}
+
+.content__video-card-title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .content__video-card-thumbnail {
