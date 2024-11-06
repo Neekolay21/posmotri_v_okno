@@ -86,6 +86,10 @@ ol {
   width: fit-content;
 }
 
+.search-form__label:has(search-form__textfield:focus-visible) {
+  border: 1px solid #fff;
+}
+
 .search-form__textfield {
   width: 225px;
   background-color: transparent;
@@ -98,6 +102,46 @@ ol {
   border-bottom: 1px solid #fff;
 }
 
+.search-form__textfield:active {
+  border: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+  outline: 0;
+  border: 0;
+}
+
+.search-form__textfield:focus-visible {
+  border: 1px solid #fff;
+}
+
+.search-form__textfield::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: rgba( 250, 250, 250, 0.7)
+}
+
+.search-form__checkbox-list {
+  margin-top: 5px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .button {
   background-color: transparent;
   border: 1px solid #fff;
@@ -106,6 +150,11 @@ ol {
   font-weight: 700;
   line-height: 21.6px;
   min-height: 34px;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
