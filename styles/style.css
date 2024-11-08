@@ -41,7 +41,6 @@ ol {
 }
 
 .content {
-  height: 534px;
   width: 1140px;
   display: grid;
   grid-template-columns: 711px 1fr;
@@ -55,7 +54,6 @@ ol {
 
 .result__video-container {
   min-width: 711px;
-  padding-bottom: 16px;
   position: relative;
 }
 
@@ -68,6 +66,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
 }
 
 .search-form__fieldset {
@@ -86,6 +85,10 @@ ol {
   width: fit-content;
 }
 
+.search-form__label:has(.search-form__textfield) {
+  margin-top: 5px;
+}
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -93,6 +96,7 @@ ol {
 
 .search-form__textfield {
   width: 225px;
+  min-height: 27px;
   background-color: transparent;
   border: 0;
   color: inherit;
@@ -136,6 +140,7 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
+  margin-top: 5px;
 }
 
 .search-form__label:has(.search-form__label-text):hover {
@@ -156,7 +161,7 @@ ol {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 21.6px;
   min-height: 34px;
@@ -178,7 +183,8 @@ button:focus-visible {
 
 .search-form__submit-button {
   margin-top: 20px;
-  min-width: 194px;
+  width: 194px;
+  padding: 6px 73.5px;
 }
 
 .more-button {
@@ -188,7 +194,7 @@ button:focus-visible {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -221,6 +227,10 @@ button:focus-visible {
   margin: 2px;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .content__card-link:focus {
   outline: none;
 }
@@ -245,10 +255,13 @@ button:focus-visible {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
