@@ -149,12 +149,12 @@ ol {
 }
 
 .search-form__checkbox[type="checkbox"]:checked + span {
-  width: 15px;
-  height: 15px;
+  width: 19px;
+  height: 19px;
   background-color: #fff;
   background-position: center;
+  border: 1px solid #000;
   outline: 1px solid #fff;
-  outline-offset: 1px;
 }
 
 .button {
